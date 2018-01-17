@@ -28,7 +28,7 @@ def turn(board)
 
   if valid_move?(board, index) == true && position_taken?(board, index) == false
     puts "Yay!"
-    move(board)
+    move(board, index)
   else
     puts "Oh no..."
     turn(board)
