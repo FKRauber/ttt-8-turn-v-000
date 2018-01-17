@@ -16,7 +16,6 @@ end
 def position_taken?(board, index)
   board[index] == "X" || board[index] == "O"
 end
-
 def move(board, index, character = "X")
   board[index] = character
 end
@@ -33,5 +32,5 @@ def turn(board)
     puts "Oh no..."
     turn(board)
   end
-
+  display_board(board)
 end
